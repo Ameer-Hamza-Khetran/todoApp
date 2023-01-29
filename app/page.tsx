@@ -9,8 +9,9 @@ const inter = Inter({ subsets: ['latin'] })
 export default function Home() {
   return (
     <div>
-      <GetTodo/>
-      <CreateTodo/>
+      {/* @ts-expect-error Server Component */}
+     <GetTodo/>
+     <CreateTodo/>
     </div>
   )
 }
