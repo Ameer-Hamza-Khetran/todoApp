@@ -9,7 +9,7 @@ type todos = {
 }
 
 async function update(id:string, isDone: boolean, refresh:() => void) {
-    await fetch('',
+    await fetch('/api/todo/update',
     {
         method: 'POST',
         body: JSON.stringify({
@@ -21,7 +21,7 @@ async function update(id:string, isDone: boolean, refresh:() => void) {
 }
 
 async function deleteTodo(id:string, refresh: () => void) {
-    await fetch(``,
+    await fetch(`/api/todo/delete?id=${id}`,
     {
         method:'DELETE',
     }

@@ -4,7 +4,7 @@ import { useRouter } from 'next/navigation';
 import { useState } from 'react';
 
 async function create(name: string, refresh: () => void) {
-    await fetch('', {
+    await fetch('/api/todo/add', {
         method: 'POST',
         body: JSON.stringify({name})
     })
