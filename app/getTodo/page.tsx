@@ -7,7 +7,7 @@ type todos = {
 }
 
 const getTodos = async () => {
-    let todos = await fetch('http://localhost:3001/api/todo/list');
+    let todos = await fetch('');
     return todos.json();
 }
 
